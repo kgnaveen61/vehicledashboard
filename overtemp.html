@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stacked Bar Charts</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #082d4d;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #1a0b7bb9;
+            color: #ffffff;
+        }
+        .header h1 {
+            margin: 0;
+            text-align: center;
+            flex: 1;
+        }
+        .header .right {
+            display: flex;
+            gap: 2px;
+        }
+        .button, .maindashboard-button {
+            background-color: #046808; /* Green */
+            border: none;
+            color: white;
+            font-size: 20px;
+            padding: 5px 10px;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .maindashboard-button {
+            background-color: #036908;
+        }
+        .chart-container {
+            display: flex;
+            justify-content: space-around; /* Space out charts */
+            align-items: center; /* Center vertically */
+            height: 80vh; /* Set height to 80% of the viewport height */
+            background-color: #082d4d; /* Ensure the background color matches */
+            padding: 10px;
+        }
+        .chart-container img {
+            width: 45%; /* Adjust the width to fit within the container */
+            height: auto; /* Maintain aspect ratio */
+            border: 2px solid #fff; /* Optional: add a border to the images */
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="index.html">
+            <button class="maindashboard-button">Main Dashboard</button>
+        </a>
+        <a href="Vehicle_temp_alert.html" style="text-decoration: none; color: aliceblue;">
+            <h1>Permanent Dock Temperature</h1>
+        </a>
+        <div class="right">
+            <button class="button">Date Range from - to</button>
+            <button class="button">Export</button>
+        </div>
+    </div>
+
+    <div class="chart-container">
+        <img src="Docktemp.png" alt="Dock Temperature Chart 1">
+        <img src="vintype.png" alt="Dock Temperature Chart 2">
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-size: 20;
+        }
+        .dashboard {
+            background-color: #f3f3f3;
+            width: 80%;  
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: repeat(2, auto);
+            gap: 20px;
+        }
+        .dashboard h1 {
+            grid-column: span 2;
+            text-align: start;
+            color: #4CAF50;
+            font-size: 2em;
+            color: #0f0e0e;
+        }
+        .horizontal-box strong {
+            font-weight: bold;
+        }
+        .circle-container {
+            display: flex;
+            justify-content: space-between;
+            height: 550px;
+            margin-top: 20px;
+            background-color: #f3f3f3;
+            align-items: center;
+            padding-left: 20px;
+            padding-right: 20px;
+
+        }
+        .circle-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .card1, .card2, .card3, .card4 {
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .card1, .card3 {
+            background-color: #f3f3f3;
+            grid-row: span 1;
+        }
+        .card2, .card4 {
+            background-color: #f3f3f3;
+            grid-row: span 2;
+            height: 520.227px;
+        }
+        .card1 h2, .card3 h2 {
+            margin: 0 0 10px;
+            font-size: 1.5em;
+            color: #151414;
+        }
+        .circle-img {
+            width: 350px;   
+            height: 300px;
+            display: block;
+            margin: 10px auto;
+        }
+        .circle-img1{
+            width: 350px;
+            height: 350px;
+            display: block;
+            margin: 10px auto;
+        }
+        .circle{
+            width: 350px;
+            height: 350px;
+            display: block;
+            margin: 10px auto;
+        }
+        .horizontal-img {
+            width: 300px;
+            height: 150px;
+            display: block;
+            margin: 10px auto;
+        }
+        .card4 {
+            background-color: #f3f3f3;
+            color: #050505;
+            text-align: start;
+            justify-content: start;
+            align-items: start;
+        }
+        .card2, .card3 {
+            color: #0f0e0e;
+        }
+        .dropdown-container {
+            width: 100%;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .dropdown {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-right: 10px;
+            font-size: 16px;
+        }
+        .search-button {
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            background-color: #2125e9;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .worldmap {
+            width: 600px;
+            height: 400px;
+            display: block;
+            margin: 10px auto;
+        }
+        .horizontal-box {
+            display: inline-block;
+            padding: 5px 10px;
+            border: 2px solid #8b72bb;
+            border-radius: 30px;
+            font-family: Arial, sans-serif;
+            font-size: 24px;
+            color: #000;
+            margin-top: 10px;
+        } 
+        .dropdown {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-right: 10px;
+            font-size: 16px; 
+        }   
+
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <h1 style="font-size: 40px; color: green;">Vehicles Dashboard</h1>
+        <div class="card2">
+            <a href = "Vehicledeployedbass.html" style="text-decoration: none; color: #2e0a82;"><h1>Today's live Vehicles  </h1></a>
+            <img src="nove.png" alt="Batteries in Swap" class="circle">
+        </div>
+        <div class="card2">
+            <div class="dropdown-container">
+                <select class="dropdown maindashboard-button">
+                    <option value="option1">City</option> 
+                    <option value="option2">Bengalore</option>
+                    <option value="option3">Delhi</option>
+                </select>
+                <select class="dropdown">
+                    <option value="option1">Vehicle number</option>
+                </select>
+                <button class="search-button">Search</button>
+            </div>
+            <h1 style="justify-content: end;">Vehicle Deployed Cities</h1>
+            <img src="worldmap.png" alt="Batteries in Swap" class="worldmap">
+            
+        </div>
+        <div class="card2">
+            <a href ="Vehicledeployedmass.html">
+            <h2> Total Vehicles MAAS 5000</h2>
+            <img src="Severe.png" alt="Severe Temp" class="circle-img1">
+            <h2> Active Vehicles 1500 & 30%</h2>  
+        </div>
+        <div class="circle-container">
+            <div class="circle-item">
+                <img src="Severe.png" alt="Ev Outscence Malfunctioning" class="circle-img1">
+                <h2>Severe Dock Temparature</h2>
+                <a href="overtemp.html">
+                <div class="horizontal-box">No. of Vehicles : <strong>85</strong></div>
+                </a>
+            </div>
+            <div class="circle-item">
+                <img src="Evoutsense.png" alt="Ev Outscence Malfunctioning" class="circle-img1">
+                <div><h2>Ev Outsense Malfunctioning</h2></div>
+                <a href="EVoutsense.html">
+                <div class="horizontal-box">No. of Vehicles : <strong>85</strong></div>
+                </a>
+            </div>
+            <div class="circle-item">
+                <img src="Notinswap.png" alt="Vehicle not in swap/week" class="circle-img1">
+                <div><h2>High Power Consumption Vehicles</h2></div>
+                <a href="Vehicle_notinswap.html">
+                <div class="horizontal-box">No. of Vehicles : <strong>120</strong></div>
+                </a>
+            </div>
+        </div>
+    </div>  
+</body>
+</html>

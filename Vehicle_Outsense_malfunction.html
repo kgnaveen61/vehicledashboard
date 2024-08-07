@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battery Not in swap details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .status-on {
+            background-color: #d4edda;
+            color: #155724;
+        }
+        .status-off {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+        .section-title {
+            padding: 10px;
+            font-size: 1.2em;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .title-on {
+            background-color: #ffcccb;
+        }
+        .title-off {
+            background-color: #d3d3d3;
+        }
+        .maindashboard-button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: right;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-left: 10px; /* Adjust as needed */
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .header .right {
+            display: flex;
+            gap: 10px;
+        }
+        .button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: rgb(5, 0, 0);
+            padding: 10px 20px;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <a href="EVoutsense.html">
+        <button class="maindashboard-button">Main Dashboard</button>
+    </a>
+    <div class="right">
+        <button class="button">Date Range from - to </button>
+        <button class="button">Export</button>
+    </div>
+</div>
+
+<div class="section-title title-on">EV Outsense Malfunction Alerts details </div>
+<table>
+    <thead>
+        <tr>
+            <th>Vin Number</th>
+            <th>Dock ID</th>
+            <th>Zone</th>
+            <th>Alert</th>
+            <th>Alert occurence count</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>MBX0008CN1L245776</td>
+            <td>INSMOMAD0106G1501B0E</td>
+            <td>Gurugram</td>
+            <td>EV Outsense</td>
+            <td>5</td>
+            
+        </tr>
+        <tr>
+            <td>SESEAG03202301116</td>
+            <td>INSMOMAD0107B233650E</td>
+            <td>Bengaluru</td>
+            <td>EV Outsense</td>
+            <td>4</td>
+            
+        </tr>
+        <tr>
+            <td>MEPHENYNB09AL0967</td>
+            <td>INSMOMAD0107B287A60E</td>
+            <td>Bengaluru</td>
+            <td>EV Outsense</td>
+            <td>4</td>
+            
+        </tr>
+        <tr>
+            <td>SESEAG03202300699</td>
+            <td>INSMOMAD0106L26E0E0E</td>
+            <td>Bengaluru</td>
+            <td>EV Outsense</td>
+            <td>3</td>
+            
+        </tr>
+        <tr>
+            <td>SESEAG01202300789</td>
+            <td>INSMOMAD0106L056B40E</td>
+            <td>Bengaluru</td>
+            <td>EV Outsense</td>
+            <td>2</td>
+            
+        </tr>
+        <tr>
+            <td>SESEAG04202300753</td>
+            <td>INSMOMAD0107B230390E</td>
+            <td>Delhi</td>
+            <td>EV Outsense</td>
+            <td>2</td>
+        </tr>
+    </tbody>
+</table>
+</body>
+</html>
+
